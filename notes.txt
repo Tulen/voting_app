@@ -22,4 +22,7 @@ Redux & Immutablity
 
 Application Logic & Pure Functions
 
-  
+Introducting Actions & Reducers
+
+  Actions are a simple data structure that describe changes that should occur in app state.
+  Reducers are functions that take an action and current state, invoking core function that matches action.

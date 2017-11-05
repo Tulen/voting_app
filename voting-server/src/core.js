@@ -1,7 +1,7 @@
-import {List, Map} from 'immutable';
+import {List, Map, fromJS} from 'immutable';
 
 export function setEntries(state, entries) {
-  return state.set('entries', entries);
+  return state.set('entries', fromJS(entries));
 }
 
 function getWinners(vote) {
@@ -37,3 +37,5 @@ export function vote(state, entry) {
     tally => tally + 1
   );
 }
+
+export const INITIAL_STATE = Map();
