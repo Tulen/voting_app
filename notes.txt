@@ -7,15 +7,19 @@ Redux & Application State
 
 Redux & Immutablity
 
-Redux state tree is immutable data structure.
-You get to a new state by applying a function that takes current state and returns new one.
-Why is this good?
-  Collection of previous state trees preserved. Free undos/redos, history serialization etc.
-  Simplifies code: pure functions that take data, return data and do nothing else are predictable.
+  Redux state tree is immutable data structure.
+  You get to a new state by applying a function that takes current state and returns new one.
+  Why is this good?
+    Collection of previous state trees preserved. Free undos/redos, history serialization etc.
+    Simplifies code: pure functions that take data, return data and do nothing else are predictable.
 
-While immutable data key part of Redux architecture, no hard requirement to use immutable library
-  Immutable.js provides api for convenient immutable operations
-  No such thing as immutability by convention. Mistakes will be made.
-  Immutable data structures persistent(preserves previous version of self when modified).
-    Structured for time and memory efficicency, even for large state trees.
-  Using POJO's and arrays may lead to excessive copying, hurting performance.
+  While immutable data key part of Redux architecture, no hard requirement to use immutable library
+    Immutable.js provides api for convenient immutable operations
+    No such thing as immutability by convention. Mistakes will be made.
+    Immutable data structures persistent(preserves previous version of self when modified).
+      Structured for time and memory efficicency, even for large state trees.
+    Using POJO's and arrays may lead to excessive copying, hurting performance.
+
+Application Logic & Pure Functions
+
+  
