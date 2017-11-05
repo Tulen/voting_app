@@ -26,3 +26,23 @@ Introducting Actions & Reducers
 
   Actions are a simple data structure that describe changes that should occur in app state.
   Reducers are functions that take an action and current state, invoking core function that matches action.
+  If reducer doesn't recognize action, just return current state.
+  If called with undefined state, reducer should know how to initialize a meaningful value.
+  Given a collection of past actions, you can "reduce" that collection into current state. Hence the name.
+  Ability to batch/replay collections a major benefit of action/reducer state transition model vs. calling core functions directly.
+  Note use of POJO's as actions vs. immutable data structures. Redux requirement.
+
+Reducer Composition
+
+  Modularization: have functionality that deals with a given part of data deal with only that part, as if the rest doesn't exist.
+  Make operations work on smallest piece/subtree of state possible.
+  Main reducer hands parts of state to lower-level (separate finding right location on state tree to applying update)
+
+Redux Store 
+
+  Holds current state, over times can receive actions that evolve state from one version to next, using 
+  core application logic written and exposed through reducer.
+
+  Current state tree only thing that varies over time in applation, rest are constants and immutable values.
+
+

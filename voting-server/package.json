@@ -20,5 +20,9 @@
     "presets": [
       "env"
     ]
+  },
+  "dependencies": {
+    "redux": "^3.7.2",
+    "socket.io": "^2.0.4"
   }
 }
