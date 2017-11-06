@@ -42,7 +42,13 @@ Redux Store
 
   Holds current state, over times can receive actions that evolve state from one version to next, using 
   core application logic written and exposed through reducer.
-
   Current state tree only thing that varies over time in applation, rest are constants and immutable values.
+  
+Socket.io Server
 
+Broadcasting State from Redux Listener
+
+ Subscribing to store: provide function that store will call after every action applied (when potential state change)
+
+Receiving Remote Redux Actions
 
